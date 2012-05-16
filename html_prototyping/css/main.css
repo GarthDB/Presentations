@@ -29,7 +29,7 @@ html, body {
 	margin: 0;
 	overflow: hidden;
 	
-	font-family: 'Ubuntu', 'Adobe Clean', 'Myriad Pro', 'Myriad Web Pro', sans-serif;
+	font-family: 'Lato', 'Adobe Clean', 'Myriad Pro', 'Myriad Web Pro', sans-serif;
 
 	font-size: 36px;
 	font-weight: 200;
@@ -129,8 +129,7 @@ html {
 
 #reveal h3, 
 #reveal h4 {
-/*	text-transform: lowercase; */
-	font-weight: 100;
+	font-weight: 300;
 }
 
 
@@ -183,7 +182,7 @@ html {
 
 #reveal .slides section {
 	line-height: 1.2em;
-	font-weight: normal;
+	font-weight: 700;
 }
 
 #reveal strong, 
