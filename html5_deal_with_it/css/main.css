@@ -1235,3 +1235,9 @@ html {
 ::-moz-selection{ background: #006EC8; color:#fff; text-shadow: none; }
 ::selection { background:#006EC8; color:#fff; text-shadow: none; }
 
+.demodiv {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+}
+

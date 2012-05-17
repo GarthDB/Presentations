@@ -39,8 +39,8 @@ html
 
 				section
 					h1 Potentially Offensive
+					h3.fragment You Are Not A JavaScript Developer
 					ul
-						li.fragment: b You Are Not A JavaScript Developer
 						li.fragment jQuery
 						li.fragment Sencha
 				
@@ -77,19 +77,74 @@ html
 					h1 New to CSS3
 
 				section
-					h1 Rounded Corners
+					section
+						h1 Rounded Corners
+
+					section
+						pre
+							|-webkit-border-radius: 10px;
+							|-moz-border-radius: 10px;
+							|border-radius: 10px;
+						div(style='display: inline-block; width: 200px; height: 200px; background: #333; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;')
+
+					section
+						pre
+							|-webkit-border-radius: 20px;
+							|-webkit-border-top-left-radius: 0;
+							|-moz-border-radius: 20px;
+							|-moz-border-radius-topleft: 0;
+							|border-radius: 20px;
+							|border-top-left-radius: 0;
+						.demodiv(style='background: #333; -webkit-border-radius: 20px; -webkit-border-top-left-radius: 0; -moz-border-radius: 20px; -moz-border-radius-topleft: 0; border-radius: 20px; border-top-left-radius: 0;')
+				section
+					section
+						h1 Border Images
+					section
+						pre
+							|border: 5px solid #feb515;
+							|-webkit-border-radius: 3px; -moz-border-radius: 3px;
+							|-webkit-border-image: url(assets/border-image.png) 5 5 5 5 stretch;
+							|-moz-border-image: url(assets/border-image.png) 5 5 5 5 stretch;
+						.demodiv(style='border: 5px solid #feb515; -webkit-border-radius: 3px; -moz-border-radius: 3px; -webkit-border-image: url(assets/border-image.png) 5 5 5 5 stretch; -moz-border-image: url(assets/border-image.png) 5 5 5 5 stretch;')
 
 				section
-					h1 Border Images
+					section
+						h1 Shadows
+					section
+						h1 Box Shadow
+						pre
+							|box-shadow: 10px 10px 5px #888;
+							|-moz-box-shadow: 10px 10px 5px #888;
+							|-webkit-box-shadow: 10px 10px 5px #888;
+						.demodiv(style='background: #333; box-shadow: 10px 10px 5px #888; -moz-box-shadow: 10px 10px 5px #888; -webkit-box-shadow: 10px 10px 5px #888;')
+					section
+						h1 Multiple Box Shadow
+						pre
+							|box-shadow: 0 1px 0 #FFF, 0 2px 0 #000;
+							|-moz-box-shadow: 0 1px 0 #FFF, 0 2px 0 #000;
+							|-webkit-box-shadow: 0 1px 0 #FFF, 0 2px 0 #000;
+						.demodiv(style='background: #333; box-shadow: 0 1px 0 #FFF, 0 2px 0 #000; -moz-box-shadow: 0 1px 0 #FFF, 0 2px 0 #000; -webkit-box-shadow: 0 1px 0 #FFF, 0 2px 0 #000;')
+					section
+						h1 Text Shadow
+						pre
+							|text-shadow: 1px 2px 1px #666;
+						.demodiv(style='text-shadow: 1px 2px 1px #666;') Shadowed!
 
 				section
-					h1 Shadows
+					section
+						h1 Flexible Box Model
+					section
+						a(href="http://www.html5rocks.com/en/tutorials/flexbox/quick/") Go here
 
 				section
-					h1 Flexible Box Model
-
-				section
-					h1 Multiple Backgrounds
+					section
+						h1 Multiple Backgrounds
+					section
+						pre
+							|background-image: url(sheep.png), url(betweengrassandsky.png);
+							|background-position: center bottom, left top;
+							|background-repeat: no-repeat;
+						
 
 				section
 					h1 HSL(a) RGB(a)
