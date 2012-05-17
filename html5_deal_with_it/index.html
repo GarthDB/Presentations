@@ -139,22 +139,58 @@ border-top-left-radius: 0;</pre>
             <h1>Multiple Backgrounds</h1>
           </section>
           <section>
-            <pre>background-image: url(sheep.png), url(betweengrassandsky.png);
+            <pre>background-image: url(assets/sheep.png), url(assets/betweengrassandsky.png);
 background-position: center bottom, left top;
 background-repeat: no-repeat;</pre>
+            <div style="display: block; width: 100%; height: 250px; background-image: url(assets/sheep.png), url(assets/betweengrassandsky.png); background-position: center bottom, left top; background-repeat: no-repeat;" class="demodiv"></div>
           </section>
         </section>
         <section>
-          <h1>HSL(a) RGB(a)</h1>
+          <section>
+            <h1>HSL(a) RGB(a)</h1>
+          </section>
+          <section>
+            <pre>color: hsla(0,100%,50%,0.4);
+rgba(255, 0, 0, 0.4);</pre>
+            <div style="color: hsla(0,100%,50%,0.4);" class="demodiv">Light!</div>
+          </section>
         </section>
         <section>
-          <h1>Type!</h1>
+          <section>
+            <h1>Type!</h1>
+          </section>
+          <section>
+            <pre>@font-face {
+	font-family: &quot;Your typeface&quot;;
+	src: url(&quot;type/filename.eot&quot;);
+	src: local(&quot;☺&quot;),
+	url(&quot;type/filename.woff&quot;) format(&quot;woff&quot;),
+	url(&quot;type/filename.otf&quot;) format(&quot;opentype&quot;),
+	url(&quot;type/filename.svg#filename&quot;) format(&quot;svg&quot;);
+}</pre>
+          </section>
+          <section>
+            <h1>Resources</h1>
+            <ul>
+              <li>Font Squirrel Generator</li>
+              <li>Google Font Library</li>
+              <li>Typekit</li>
+            </ul>
+          </section>
         </section>
         <section>
-          <h1>Regions</h1>
+          <section>
+            <h1>Regions</h1>
+          </section>
+          <section><a href="http://labs.adobe.com/technologies/cssregions/">Go here</a></section>
         </section>
         <section>
           <h1>Vector</h1>
+          <ul>
+            <li>Canvas (paper.js)</li>
+            <li>SVG (Raphael.js)</li>
+            <li>Icon Fonts</li>
+          </ul>
         </section>
         <section>
           <h1>HTML</h1>
@@ -186,55 +222,93 @@ background-repeat: no-repeat;</pre>
           <h1>Details &amp; Summary</h1>
         </section>
         <section>
-          <h1>Forms</h1>
-        </section>
-        <section>
-          <h1>Color</h1>
-        </section>
-        <section>
-          <h1>Date, Datetime &amp; Time</h1>
-        </section>
-        <section>
-          <h1>Email</h1>
-        </section>
-        <section>
-          <h1>Month</h1>
-        </section>
-        <section>
-          <h1>Number</h1>
-        </section>
-        <section>
-          <h1>Range</h1>
-        </section>
-        <section>
-          <h1>Search</h1>
-        </section>
-        <section>
-          <h1>Telephone</h1>
-        </section>
-        <section>
-          <h1>URL</h1>
+          <section>
+            <h1>Forms</h1>
+          </section>
+          <section>
+            <h1>Color</h1>
+          </section>
+          <section>
+            <h1>Date, Datetime &amp; Time</h1>
+          </section>
+          <section>
+            <h1>Email</h1>
+          </section>
+          <section>
+            <h1>Month</h1>
+          </section>
+          <section>
+            <h1>Number</h1>
+          </section>
+          <section>
+            <h1>Range</h1>
+          </section>
+          <section>
+            <h1>Search</h1>
+          </section>
+          <section>
+            <h1>Telephone</h1>
+          </section>
+          <section>
+            <h1>URL</h1>
+          </section>
         </section>
         <section>
           <h1>HTML APIs</h1>
         </section>
         <section>
-          <h1>Browser History</h1>
+          <section>
+            <h1>Browser History</h1>
+          </section>
+          <section>
+            <pre>history.pushState(null, null, link.href);</pre>
+          </section>
         </section>
         <section>
-          <h1>Web Messaging</h1>
+          <section>
+            <h1>Web Messaging</h1>
+          </section>
+          <section>
+            <h1>W3C</h1>
+            <p>allow documents to communicate with each other regardless of their source domain, in a way designed to not enable cross-site scripting attacks.</p>
+          </section>
         </section>
         <section>
-          <h1>Local Storage</h1>
+          <section>
+            <h1>Local Storage</h1>
+          </section>
+          <section>
+            <pre>localStorage.setItem(&quot;bar&quot;, foo);
+var foo = localStorage.getItem(&quot;bar&quot;);</pre>
+          </section>
         </section>
         <section>
-          <h1>Drag and Drop</h1>
+          <section>
+            <h1>Drag and Drop</h1>
+          </section>
+          <section>
+            <pre>&lt;div class=&quot;fooclass&quot; draggable=&quot;true&quot;&gt;Foo'd!&lt;/div&gt;</pre>
+            <pre>foo.addEventListener('dragstart', handleDragStart, false);
+foo.addEventListener('dragenter', handleDragEnter, false)
+foo.addEventListener('dragover', handleDragOver, false);
+foo.addEventListener('dragleave', handleDragLeave, false);
+foo.addEventListener('drop', handleDrop, false);
+foo.addEventListener('dragend', handleDragEnd, false);</pre>
+          </section>
         </section>
         <section>
-          <h1>Geolocation</h1>
+          <section>
+            <h1>Geolocation</h1>
+          </section>
+          <section>
+            <pre>navigator.geolocation.getCurrentPosition(show_map);</pre>
+          </section>
         </section>
         <section>
-          <h1>File API</h1>
+          <section>
+            <h1>File API</h1>
+          </section>
+          <section><a href="http://www.html5rocks.com/en/tutorials/file/dndfiles/">Go here</a></section>
         </section>
         <section>
           <h1>JavaScript for Applications</h1>

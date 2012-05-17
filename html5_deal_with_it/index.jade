@@ -141,22 +141,52 @@ html
 						h1 Multiple Backgrounds
 					section
 						pre
-							|background-image: url(sheep.png), url(betweengrassandsky.png);
+							|background-image: url(assets/sheep.png), url(assets/betweengrassandsky.png);
 							|background-position: center bottom, left top;
 							|background-repeat: no-repeat;
-						
+						.demodiv(style='display: block; width: 100%; height: 250px; background-image: url(assets/sheep.png), url(assets/betweengrassandsky.png); background-position: center bottom, left top; background-repeat: no-repeat;')
 
 				section
-					h1 HSL(a) RGB(a)
+					section
+						h1 HSL(a) RGB(a)
+					section
+						pre
+							|color: hsla(0,100%,50%,0.4);
+							|rgba(255, 0, 0, 0.4);
+						.demodiv(style='color: hsla(0,100%,50%,0.4);') Light!
 
 				section
-					h1 Type!
-
+					section
+						h1 Type!
+					section
+						pre
+							|@font-face {
+							|	font-family: "Your typeface";
+							|	src: url("type/filename.eot");
+							|	src: local("☺"),
+							|	url("type/filename.woff") format("woff"),
+							|	url("type/filename.otf") format("opentype"),
+							|	url("type/filename.svg#filename") format("svg");
+							| }
+					section
+						h1 Resources
+						ul
+							li Font Squirrel Generator
+							li Google Font Library
+							li Typekit
 				section
-					h1 Regions
+					section
+						h1 Regions
+					section
+						a(href="http://labs.adobe.com/technologies/cssregions/") Go here
+
 
 				section
 					h1 Vector
+					ul
+						li Canvas (paper.js)
+						li SVG (Raphael.js)
+						li Icon Fonts
 
 				section
 					h1 HTML
@@ -187,55 +217,87 @@ html
 					h1 Details &amp; Summary
 
 				section
-					h1 Forms
+					section
+						h1 Forms
 
-				section
-					h1 Color
+					section
+						h1 Color
 
-				section
-					h1 Date, Datetime &amp; Time
+					section
+						h1 Date, Datetime &amp; Time
 
-				section
-					h1 Email
+					section
+						h1 Email
 
-				section
-					h1 Month
+					section
+						h1 Month
 
-				section
-					h1 Number
+					section
+						h1 Number
 
-				section
-					h1 Range
+					section
+						h1 Range
 
-				section
-					h1 Search
+					section
+						h1 Search
 
-				section
-					h1 Telephone
+					section
+						h1 Telephone
 
-				section
-					h1 URL
+					section
+						h1 URL
 
 				section
 					h1 HTML APIs
 				
 				section
-					h1 Browser History
+					section
+						h1 Browser History
+					section
+						pre
+							|history.pushState(null, null, link.href);
 
 				section
-					h1 Web Messaging
+					section
+						h1 Web Messaging
+					section
+						h1 W3C
+						p allow documents to communicate with each other regardless of their source domain, in a way designed to not enable cross-site scripting attacks.
 
 				section
-					h1 Local Storage
+					section
+						h1 Local Storage
+					section
+						pre
+							|localStorage.setItem("bar", foo);
+							|var foo = localStorage.getItem("bar");
 
 				section
-					h1 Drag and Drop
+					section
+						h1 Drag and Drop
+					section
+						pre
+							|<div class="fooclass" draggable="true">Foo'd!</div>
+						pre
+							|foo.addEventListener('dragstart', handleDragStart, false);
+							|foo.addEventListener('dragenter', handleDragEnter, false)
+							|foo.addEventListener('dragover', handleDragOver, false);
+							|foo.addEventListener('dragleave', handleDragLeave, false);
+							|foo.addEventListener('drop', handleDrop, false);
+							|foo.addEventListener('dragend', handleDragEnd, false);
 
 				section
-					h1 Geolocation
+					section
+						h1 Geolocation
+					section
+						pre
+							|navigator.geolocation.getCurrentPosition(show_map);
 
 				section
-					h1 File API
+					section
+						h1 File API
+					section
+						a(href="http://www.html5rocks.com/en/tutorials/file/dndfiles/") Go here
 
 
 				section
