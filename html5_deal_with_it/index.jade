@@ -81,42 +81,49 @@ html
 						h1 Rounded Corners
 
 					section
-						pre
-							|-webkit-border-radius: 10px;
-							|-moz-border-radius: 10px;
-							|border-radius: 10px;
+						pre: code
+							|.demo{
+							|	-webkit-border-radius: 10px;
+							|	-moz-border-radius: 10px;
+							|	border-radius: 10px;
+							|}
 						div(style='display: inline-block; width: 200px; height: 200px; background: #333; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;')
 
 					section
-						pre
-							|-webkit-border-radius: 20px;
-							|-webkit-border-top-left-radius: 0;
-							|-moz-border-radius: 20px;
-							|-moz-border-radius-topleft: 0;
-							|border-radius: 20px;
-							|border-top-left-radius: 0;
+						pre: code
+							|.demo{
+							|	-webkit-border-radius: 20px;
+							|	-webkit-border-top-left-radius: 0;
+							|	-moz-border-radius: 20px;
+							|	-moz-border-radius-topleft: 0;
+							|	border-radius: 20px;
+							|	border-top-left-radius: 0;
+							|}
 						.demodiv(style='background: #333; -webkit-border-radius: 20px; -webkit-border-top-left-radius: 0; -moz-border-radius: 20px; -moz-border-radius-topleft: 0; border-radius: 20px; border-top-left-radius: 0;')
 				section
 					section
 						h1 Border Images
 					section
-						pre
-							|border: 5px solid #feb515;
-							|-webkit-border-radius: 3px; -moz-border-radius: 3px;
-							|-webkit-border-image: url(assets/border-image.png) 5 5 5 5 stretch;
-							|-moz-border-image: url(assets/border-image.png) 5 5 5 5 stretch;
+						pre: code
+							|.demo{
+							|	border: 5px solid #feb515;
+							|	-webkit-border-radius: 3px; -moz-border-radius: 3px;
+							|	-webkit-border-image: url(assets/border-image.png) 5 5 5 5 stretch;
+							|	-moz-border-image: url(assets/border-image.png) 5 5 5 5 stretch;
+							|}
 						.demodiv(style='border: 5px solid #feb515; -webkit-border-radius: 3px; -moz-border-radius: 3px; -webkit-border-image: url(assets/border-image.png) 5 5 5 5 stretch; -moz-border-image: url(assets/border-image.png) 5 5 5 5 stretch;')
 
 				section
 					section
 						h1 Gradients
 					section
-						pre
-							|/*background-color: #343434;*/
-							|background-image: -webkit-linear-gradient(top, rgba(52, 52, 52, 0.63), rgba(78, 88, 178, 1.00));
-							|background-image: -moz-linear-gradient(top, rgba(52, 52, 52, 0.63), rgba(78, 88, 178, 1.00));
-							|background-image: linear-gradient(top, rgba(52, 52, 52, 0.63), rgba(78, 88, 178, 1.00));
-
+						pre: code
+							|.demo{
+							|	/*background-color: #343434;*/
+							|	background-image: -webkit-linear-gradient(top, rgba(52, 52, 52, 0.63), rgba(78, 88, 178, 1.00));
+							|	background-image: -moz-linear-gradient(top, rgba(52, 52, 52, 0.63), rgba(78, 88, 178, 1.00));
+							|	background-image: linear-gradient(top, rgba(52, 52, 52, 0.63), rgba(78, 88, 178, 1.00));
+							|}
 						.demodiv(style='background-image: -webkit-linear-gradient(top, rgba(52, 52, 52, 0.63), rgba(78, 88, 178, 1.00)); background-image: -moz-linear-gradient(top, rgba(52, 52, 52, 0.63), rgba(78, 88, 178, 1.00)); background-image: linear-gradient(top, rgba(52, 52, 52, 0.63), rgba(78, 88, 178, 1.00));')
 
 				section
@@ -124,22 +131,28 @@ html
 						h1 Shadows
 					section
 						h1 Box Shadow
-						pre
-							|box-shadow: 10px 10px 5px #888;
-							|-moz-box-shadow: 10px 10px 5px #888;
-							|-webkit-box-shadow: 10px 10px 5px #888;
+						pre: code
+							|.demo{
+							|	box-shadow: 10px 10px 5px #888;
+							|	-moz-box-shadow: 10px 10px 5px #888;
+							|	-webkit-box-shadow: 10px 10px 5px #888;
+							|}
 						.demodiv(style='background: #333; box-shadow: 10px 10px 5px #888; -moz-box-shadow: 10px 10px 5px #888; -webkit-box-shadow: 10px 10px 5px #888;')
 					section
 						h1 Multiple Box Shadow
-						pre
-							|box-shadow: 0 1px 0 #FFF, 0 2px 0 #000;
-							|-moz-box-shadow: 0 1px 0 #FFF, 0 2px 0 #000;
-							|-webkit-box-shadow: 0 1px 0 #FFF, 0 2px 0 #000;
+						pre: code
+							|.demo{
+							|	box-shadow: 0 1px 0 #FFF, 0 2px 0 #000;
+							|	-moz-box-shadow: 0 1px 0 #FFF, 0 2px 0 #000;
+							|	-webkit-box-shadow: 0 1px 0 #FFF, 0 2px 0 #000;
+							|}
 						.demodiv(style='background: #333; box-shadow: 0 1px 0 #FFF, 0 2px 0 #000; -moz-box-shadow: 0 1px 0 #FFF, 0 2px 0 #000; -webkit-box-shadow: 0 1px 0 #FFF, 0 2px 0 #000;')
 					section
 						h1 Text Shadow
-						pre
-							|text-shadow: 1px 2px 1px #666;
+						pre: code
+							|.demo{
+							|	text-shadow: 1px 2px 1px #666;
+							|}
 						.demodiv(style='text-shadow: 1px 2px 1px #666;') Shadowed!
 
 				section
@@ -152,10 +165,12 @@ html
 					section
 						h1 Multiple Backgrounds
 					section
-						pre
-							|background-image: url(assets/sheep.png), url(assets/betweengrassandsky.png);
-							|background-position: center bottom, left top;
-							|background-repeat: no-repeat;
+						pre: code
+							|.demo{
+							|	background-image: url(assets/sheep.png), url(assets/betweengrassandsky.png);
+							|	background-position: center bottom, left top;
+							|	background-repeat: no-repeat;
+							|}
 						.demodiv(style='display: block; width: 100%; height: 250px; background-image: url(assets/sheep.png), url(assets/betweengrassandsky.png); background-position: center bottom, left top; background-repeat: no-repeat;')
 
 				section
@@ -238,11 +253,11 @@ html
 						p Defines additional details that the user can view or hide
 					section
 						h1 Details Example
-						pre
-							|<details>
-							|	<summary>Garth is Awesome</summary>
-							|	<p>So very true</p>
-							|</details>
+						pre: code
+							|&lt;details&gt;
+							|	&lt;summary&gt;Garth is Awesome&lt;/summary&gt;
+							|	&lt;p&gt;So very true&lt;/p&gt;
+							|&lt;/details&gt;
 						details
 							summary Garth is Awesome
 							p So very true
