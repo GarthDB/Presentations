@@ -1,0 +1,303 @@
+!!! 5
+html
+	head
+		meta(charset = 'utf-8')
+		meta('http-equiv' = 'X-UA-Compatible', content = 'IE=edge,chrome=1')
+		title HTML5; Deal with it
+		link(href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic,700italic', rel='stylesheet', type='text/css')
+		link(rel="stylesheet", href="css/reset.css")
+		link(rel="stylesheet", href="css/main.css")
+		link(rel="stylesheet", href="lib/zenburn.css")
+	body
+		#reveal
+			//- Used to fade in a background when a specific slide state is reached
+			.state-background
+			
+			//- Any section element inside of this container is displayed as a slide
+			.slides
+				section.home(data-state="home-page")
+					h1 HTML5
+					img.fragment(src="assets/dealwithit.gif")
+					h3.inverted
+						b Garth
+						| Braithwaite
+						span Senior Experience Designer
+					script
+						// Deliciously hacky. Look away.
+						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) )
+						document.write( '<p style="color: rgba(255,255,255,0.6); text-shadow: none; font-size:.5em; font-weight:bold; background: rgba(255, 255, 255, .2); box-shadow: 0px 8px 8px rgba(0,0,0,0.2), inset 2px 2px 3px rgba(0,0,0,0.05); border-radius: 8px; border: 1px solid rgba(255, 255, 255, .2); margin-left:-8px; margin-right:-8px;">'+'TAP TO NAVIGATE'+'</p>' );
+				
+				section
+					a(href="http://garthdb.github.com/Presentations/html5_deal_with_it") garthdb.github.com/Presentations/html5_deal_with_it
+				
+				section
+					h1.large
+						a(href="http://twitter.com/garthdb") @garthdb
+				section
+					h1 Show my hand
+					p.fragment I'm going to work convince you to use/learn HTML
+
+				section
+					h1 Potentially Offensive
+					ul
+						li.fragment: b You Are Not A JavaScript Developer
+						li.fragment jQuery
+						li.fragment Sencha
+				
+				section
+					h1 Overview
+					h3.fragment: em Tell them what you're going to tell them
+					ul.fragment
+						li UI
+						li New in CSS3
+						li New in HTML5
+						li JavaScript for Applications
+						li Cautions
+						li Workflow Helpers
+
+				section
+					h1 User Interface
+
+				section
+					h1 Components
+					ul
+						li Components
+						li Twitter Bootstrap
+						li jQuery Plugins
+				
+				section
+					h1 CSS
+
+				section
+					h1 CSS for Applications
+					p Scalable and Modular Architecture for CSS
+					p (SMACSS)
+
+				section
+					h1 New to CSS3
+
+				section
+					h1 Rounded Corners
+
+				section
+					h1 Border Images
+
+				section
+					h1 Shadows
+
+				section
+					h1 Flexible Box Model
+
+				section
+					h1 Multiple Backgrounds
+
+				section
+					h1 HSL(a) RGB(a)
+
+				section
+					h1 Type!
+
+				section
+					h1 Regions
+
+				section
+					h1 Vector
+
+				section
+					h1 HTML
+					ul.fragment
+						li Semantic Elements
+						li Forms
+						li APIs
+
+				section
+					h1 Semantic Elements
+
+				section
+					h1 Header & Footer
+
+				section
+					h1 Nav
+
+				section
+					h1 Section
+
+				section
+					h1 Article
+
+				section
+					h1 Aside
+
+				section
+					h1 Details &amp; Summary
+
+				section
+					h1 Forms
+
+				section
+					h1 Color
+
+				section
+					h1 Date, Datetime &amp; Time
+
+				section
+					h1 Email
+
+				section
+					h1 Month
+
+				section
+					h1 Number
+
+				section
+					h1 Range
+
+				section
+					h1 Search
+
+				section
+					h1 Telephone
+
+				section
+					h1 URL
+
+				section
+					h1 HTML APIs
+				
+				section
+					h1 Browser History
+
+				section
+					h1 Web Messaging
+
+				section
+					h1 Local Storage
+
+				section
+					h1 Drag and Drop
+
+				section
+					h1 Geolocation
+
+				section
+					h1 File API
+
+
+				section
+					h1 JavaScript for Applications
+
+				section
+					h1 MVC Architecture
+					ul
+						li Backbone
+						li Angular
+						li Batman
+						li Ember
+
+				section
+					h1 Template
+					ul
+						li Jade
+						li Mustache
+						li ICanHaz
+						li Eco
+
+				section
+					h1 Build
+					ul
+						li Brunch.io
+
+				section
+					h1 Communication
+					ul
+						li Json
+						li AMF.js
+						li Socket.io
+
+				section
+					h1 Interesting
+					h3 Continuous Json
+					ul
+						li MongoDB
+						li Node.js
+						li JS
+
+				section
+					h1 Testing
+					ul
+						li Jasmine
+						li Mocha
+				
+				section
+					h1 Cautions &amp; Workarounds
+				
+				section
+					h1 Cross Browser Cautions
+
+				section
+					h1 HTML5 Shiv
+
+				section
+					h1 CSS3
+
+				section
+					h1 Modernizr
+
+				section.adobe-list
+					h3 Colophon
+					ul
+						li
+							b reveal.js
+							| by <a href="http://hakim.se">Hakim El Hattab</a>
+						li
+							b Font
+							| Lato
+			
+			//- The navigational controls UI -->
+			aside.controls
+				a.left(href="#", style="-webkit-transform:rotate(180deg);") &#x2794;
+				a.right(href="#") &#x2794;
+				a.up(href="#")
+				a.down(href="#")
+			
+			//- Displays presentation progress, max value changes via JS to reflect # of slides -->
+			div.progress
+				span
+		
+		script(src="js/reveal.js")
+
+		//- Optional libraries for code syntax highlighting and classList support in IE9
+		script(src="lib/highlight.js")
+		script(src="lib/classList.js")
+		
+		script
+			// Parse the query string into a key/value object
+			var query = {};
+			location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+				query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+			} );
+			
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: !(query.controls === 'false'),
+			
+				// Display a presentation progress bar
+				progress: true,
+			
+				// If true; each slide will be pushed to the browser history
+				history: true,
+			
+				// Flags if mouse wheel navigation should be enabled
+				mouseWheel: true,
+			
+				// Apply a 3D roll to links on hover
+				rollingLinks: false,
+			
+				// UI style
+				theme: query.theme || 'adobe', // default/neon
+			
+				// Transition style
+				transition: query.transition || 'linear' // default/cube/page/concave/linear(2d)
+			});
+			
+			hljs.initHighlightingOnLoad();
