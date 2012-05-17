@@ -1,0 +1,224 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>HTML5; Deal with it</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+ 		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+
+		<link rel="stylesheet" href="lib/zenburn.css">
+	</head>
+	
+	<body>
+
+
+		<div id="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-state="home-page" class="home">
+						<h1>HTML5</h1>
+						<img class="fragment" src="assets/dealwithit.gif">
+						<h3 class="inverted"><b>Garth</b> Braithwaite
+						<span>Senior Experience Designer</span>						
+						<script>
+							// Deliciously hacky. Look away.
+							if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) )
+							document.write( '<p style="color: rgba(255,255,255,0.6); text-shadow: none; font-size:.5em; font-weight:bold; background: rgba(255, 255, 255, .2); box-shadow: 0px 8px 8px rgba(0,0,0,0.2), inset 2px 2px 3px rgba(0,0,0,0.05); border-radius: 8px; border: 1px solid rgba(255, 255, 255, .2); margin-left:-8px; margin-right:-8px;">'+'TAP TO NAVIGATE'+'</p>' );
+						</script>
+				</section>
+
+				<section>
+					<a href="http://garthdb.github.com/Presentations/html5_deal_with_it">garthdb.github.com/Presentations/html5_deal_with_it</a>
+				</section>
+				
+				<section data-state="second-page" >
+						<h1 class="large"><a href="http://twitter.com/garthdb">@garthdb</a></h1>
+				</section>
+
+				<section>
+						<h1>Origin Story</h1>
+						<ul class="flex-list">
+							<li class="fragment">Designer</li>
+							<li class="fragment">Designer / Design Implementer</li>
+							<li class="fragment">Developer</li>
+							<li class="fragment">Architect</li>
+							<li class="fragment">UX Director</li>
+							<li class="fragment">Experience Designer</li>
+						</ul>
+				</section>
+				<section>
+						<h1>IxD</h1>
+						<h3><em>It's complicated</em></h3>
+				</section>
+				<section>
+						<h1><em>So when the user clicks this</em></h1>
+						<h3><em>... it moves and goes <b>whoosh!</b> to the side</em></h3>
+				</section>
+				<section>
+						<h1>Photoshop Lies</h1>
+						<div>
+							<img src="assets/photoshop-drop-shadow.png"/>
+							<div style="display: inline-block; position: relative; top:-20px; -moz-box-shadow: 5px 9px 5px 5px rgba(0, 0, 0, 0.75);-webkit-box-shadow: 5px 9px 5px 5px rgba(0, 0, 0, 0.75);-o-box-shadow: 5px 9px 5px 5px rgba(0, 0, 0, 0.75);box-shadow: 5px 9px 5px 5px rgba(0, 0, 0, 0.75); width: 160px; height: 160px; background: red;"></div>
+						</div>
+				</section>
+
+				<section>
+						<h1>Text!</h1>
+						<img src="assets/text.png">
+				</section>
+
+				<section>
+						<h1>Good UX Moves and Adapts</h1>
+				</section>
+
+				<section>
+						<h1>Summary</h1>
+						<p>Designing out of context will always be open to misinterpretation and translation errors.</p>
+				</section>
+
+				<section>
+						<h1>Translation</h1>
+						<p>Learn how to code.</p>
+				</section>
+
+				<section>
+						<h1>Prototype</h1>
+						<p>Throw away IxD presentables</p>
+				</section>
+
+				<section>
+						<h1>Prototype</h1>
+						<ul class="flex-list">
+							<li class="fragment">Dirty Code (READ: not bad code)</li>
+							<li class="fragment">Expand Understanding</li>
+							<li class="fragment">Quick</li>
+							<li class="fragment">Interactive (READ: JS)</li>
+						</ul>
+				</section>
+
+				<section>
+						<h1>Tools</h1>
+						<ul class="flex-list">
+							<li class="fragment">Local Testing</li>
+							<li class="fragment">IDE</li>
+							<li class="fragment">Preprocessor (markup, css, and js)</li>
+							<li class="fragment">Workflow Candy</li>
+							<li class="fragment">Hosting</li>
+						</ul>
+				</section>
+				<section>
+						<h1>Local Testing</h1>
+						<a href="http://simbco.github.com/httpster">httpster</a>
+				</section>
+
+				<section>
+						<h1>IDE</h1>
+						<ul class="flex-list">
+							<li class="fragment"><a href="http://github.com/adobe/brackets">shhh....</a> (not yet)</li>
+							<li class="fragment"><a href="http://www.sublimetext.com/2">Sublime</a></li>
+							<li class="fragment"><a href="http://www.panic.com/coda/">Coda</a></li>
+							<li class="fragment"><a href="http://macrabbit.com/espresso/">Espresso</a></li>
+						</ul>
+				</section>
+
+				<section>
+						<h1>Preprocessor</h1>
+						<ul class="flex-list">
+							<li class="fragment"><a href="http://jade-lang.com/">Jade</a>, HAML, etc</li>
+							<li class="fragment"><a href="http://learnboost.github.com/stylus/">Stylus</a>, Sass, Less</li>
+							<li class="fragment"><a href="http://coffeescript.org/">Coffeescript</a></li>
+						</ul>
+				</section>
+
+				<section>
+						<h1>Workflow Candy</h1>
+						<ul class="flex-list">
+							<li class="fragment"><a href="http://incident57.com/codekit/">CodeKit</a></li>
+							<li class="fragment"><a href="http://codecanyon.net/item/nettuts-structurer-pro/300801">Structurer Pro</a></li>
+							<li class="fragment"><a href="http://labs.adobe.com/technologies/shadow/">Adobe Shadow</a></li>
+							<li class="fragment"><a href="http://totalterminal.binaryage.com/">Total Terminal</a></li>
+						</ul>
+				</section>
+
+				<section>
+						<h1>Hosting</h1>
+						<h3>Github Pages</h3>
+				</section>
+
+				<section data-state="no-logo">
+					<img src="assets/adobe-vector.svg" width="357" height="600" style="margin-top:-150px" >							
+				</section>
+
+				<section class="adobe-list">
+					<h3>Colophon</h3>
+					<ul >
+						<li><b>reveal.js</b> by <a href="http://hakim.se">Hakim El Hattab</a></li>
+						<li><b>Font</b> Ubuntu</li>
+					</ul>
+				</section>
+
+
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#" style="-webkit-transform:rotate(180deg);">&#x2794;</a>
+				<a class="right" href="#">&#x2794;</a>
+				<a class="up" href="#"></a>
+				<a class="down" href="#"></a>
+			</aside>
+
+			<!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+		
+		<script src="js/reveal.js"></script>
+
+		<!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
+		<script src="lib/highlight.js"></script>
+		<script src="lib/classList.js"></script>
+		
+		<script>
+			// Parse the query string into a key/value object
+			var query = {};
+			location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+				query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+			} );
+
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: !(query.controls === 'false'),
+
+				// Display a presentation progress bar
+				progress: true,
+
+				// If true; each slide will be pushed to the browser history
+				history: true,
+
+				// Flags if mouse wheel navigation should be enabled
+				mouseWheel: true,
+
+				// Apply a 3D roll to links on hover
+				rollingLinks: false,
+
+				// UI style
+				theme: query.theme || 'adobe', // default/neon
+
+				// Transition style
+				transition: query.transition || 'linear' // default/cube/page/concave/linear(2d)
+			});
+
+			hljs.initHighlightingOnLoad();
+		</script>
+
+	</body>
+</html>
