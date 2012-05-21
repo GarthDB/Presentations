@@ -1,0 +1,143 @@
+!!! 5
+html
+	title = 'Brackets Extension UI'
+	include ../includes/head.jade
+		link(href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic,700italic', rel='stylesheet', type='text/css')
+	body
+		#reveal
+			//- Used to fade in a background when a specific slide state is reached
+			.state-background
+			
+			//- Any section element inside of this container is displayed as a slide
+			.slides
+				section.home(data-state="home-page")
+					h1= title
+				
+				section
+					section
+						h1 Design Principles
+						h3 Brackets should be:
+						ul
+							li Code Centric
+							li Lightweight
+							li Beautiful
+
+					section
+						h1 Main Concern
+						h3 Hierarchy of Importance
+
+				section
+					h1 Comparisons
+					h3 Browsers
+					ul
+						li Google Chrome
+						li Firefox
+					br
+					br
+					h3 IDE
+					ul
+						li Textmate
+						li Sublime Text 2
+						li Eclipse
+
+				section
+					h1 Potential Areas
+					ul
+						li Application Menus
+						li Context Menus
+						li Toolbar
+						li Status Bar
+						li Panel
+						li Dialogs
+						li Inline Editor
+
+				section
+					h1 Recommendations
+					ul
+						li.fragment Try not to control
+						li.fragment Lead by example
+						li.fragment Documentation &amp; Guidelines
+
+				section
+					section
+						h1 Application Menus
+						img(src="assets/too-many-menus.png")
+					section
+						h1 Guidelines
+						ul
+							li.fragment Limit the number of top level menus
+							li.fragment Avoid blatant branding/marketing
+							li.fragment Avoid using more than 2 layers of sub menus
+
+				section
+					section
+						h1 Context Menus
+					section
+						h1 Guidelines
+						ul
+							li.fragment Contextually relevant
+							li.fragment Limit functionality
+							li.fragment Recognize limited discoverability
+							li.fragment Consider Application menu and keyboard shortcuts
+
+				section
+					section
+						h1 Toolbar
+						img(src="assets/too-many-toolbars.jpg")
+					section
+						h1 Guidelines
+						ul
+							li.fragment Recommended for stateful indicators
+							li.fragment Minimal design icons (limited color)
+							li.fragment Avoid blatant branding/marketing
+							li.fragment Make optional
+
+				section
+					h1 Status Bar
+					h3.fragment not recommended
+
+				section
+					section
+						h1 Panels
+						img(src="assets/too-many-panels.jpg")
+						h3.fragment not recommended
+					section
+						h1 Guidelines
+						ul
+							li.fragment Should be contextually relevant
+							li.fragment Easy to hide
+							li.fragment Consider using dialogs for settings
+
+				section
+					section
+						h1 Dialogs
+					section
+						h1 Guidelines
+						ul
+							li.fragment Recommended for settings
+							li.fragment Potentially useful for property changes (consider inline editor)
+							li.fragment Consideration: freezes ui
+
+				section
+					section
+						h1 Inline Editor
+					section
+						h1 Guidelines
+						ul
+							li.fragment Pertains to or effects code contextually
+							li.fragment Intended primarily for editing
+							li.fragment Can be used for previewing
+							li.fragment Usually temporary action
+
+				section
+					section
+						h1 UI Changes
+					section
+						img(src='assets/menu.png')
+					section
+						img(src='assets/brackets_extensions.ui.png')
+
+			
+			include ../includes/controls.jade
+		
+		include ../includes/close.jade

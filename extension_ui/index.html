@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Brackets Extension UI</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="lib/zenburn.css">
+  </head>
+  <body>
+    <div id="reveal">
+      <div class="state-background"></div>
+      <div class="slides">
+        <section data-state="home-page" class="home">
+          <h1>Brackets Extension UI</h1>
+        </section>
+        <section>
+          <section>
+            <h1>Design Principles</h1>
+            <h3>Brackets should be:</h3>
+            <ul>
+              <li>Code Centric</li>
+              <li>Lightweight</li>
+              <li>Beautiful</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Main Concern</h1>
+            <h3>Hierarchy of Importance</h3>
+          </section>
+        </section>
+        <section>
+          <h1>Comparisons</h1>
+          <h3>Browsers</h3>
+          <ul>
+            <li>Google Chrome</li>
+            <li>Firefox</li>
+          </ul><br><br>
+          <h3>IDE</h3>
+          <ul>
+            <li>Textmate</li>
+            <li>Sublime Text 2</li>
+            <li>Eclipse</li>
+          </ul>
+        </section>
+        <section>
+          <h1>Potential Areas</h1>
+          <ul>
+            <li>Application Menus</li>
+            <li>Context Menus</li>
+            <li>Toolbar</li>
+            <li>Status Bar</li>
+            <li>Panel</li>
+            <li>Dialogs</li>
+            <li>Inline Editor</li>
+          </ul>
+        </section>
+        <section>
+          <h1>Recommendations</h1>
+          <ul>
+            <li class="fragment">Try not to control</li>
+            <li class="fragment">Lead by example</li>
+            <li class="fragment">Documentation &amp; Guidelines</li>
+          </ul>
+        </section>
+        <section>
+          <section>
+            <h1>Application Menus</h1><img src="assets/too-many-menus.png">
+          </section>
+          <section>
+            <h1>Guidelines</h1>
+            <ul>
+              <li class="fragment">Limit the number of top level menus</li>
+              <li class="fragment">Avoid blatant branding/marketing</li>
+              <li class="fragment">Avoid using more than 2 layers of sub menus</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Context Menus</h1>
+          </section>
+          <section>
+            <h1>Guidelines</h1>
+            <ul>
+              <li class="fragment">Contextually relevant</li>
+              <li class="fragment">Limit functionality</li>
+              <li class="fragment">Recognize limited discoverability</li>
+              <li class="fragment">Consider Application menu and keyboard shortcuts</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Toolbar</h1><img src="assets/too-many-toolbars.jpg">
+          </section>
+          <section>
+            <h1>Guidelines</h1>
+            <ul>
+              <li class="fragment">Recommended for stateful indicators</li>
+              <li class="fragment">Minimal design icons (limited color)</li>
+              <li class="fragment">Avoid blatant branding/marketing</li>
+              <li class="fragment">Make optional</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h1>Status Bar</h1>
+          <h3 class="fragment">not recommended</h3>
+        </section>
+        <section>
+          <section>
+            <h1>Panels</h1><img src="assets/too-many-panels.jpg">
+            <h3 class="fragment">not recommended</h3>
+          </section>
+          <section>
+            <h1>Guidelines</h1>
+            <ul>
+              <li class="fragment">Should be contextually relevant</li>
+              <li class="fragment">Easy to hide</li>
+              <li class="fragment">Consider using dialogs for settings</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Dialogs</h1>
+          </section>
+          <section>
+            <h1>Guidelines</h1>
+            <ul>
+              <li class="fragment">Recommended for settings</li>
+              <li class="fragment">Potentially useful for property changes (consider inline editor)</li>
+              <li class="fragment">Consideration: freezes ui</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Inline Editor</h1>
+          </section>
+          <section>
+            <h1>Guidelines</h1>
+            <ul>
+              <li class="fragment">Pertains to or effects code contextually</li>
+              <li class="fragment">Intended primarily for editing</li>
+              <li class="fragment">Can be used for previewing</li>
+              <li class="fragment">Usually temporary action</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>UI Changes</h1>
+          </section>
+          <section><img src="assets/menu.png"></section>
+          <section><img src="assets/brackets_extensions.ui.png"></section>
+        </section>
+      </div>
+      <aside class="controls"><a href="#" style="-webkit-transform:rotate(180deg);" class="left">&#x2794;</a><a href="#" class="right">&#x2794;</a><a href="#" class="up"></a><a href="#" class="down"></a></aside>
+      <div class="progress"><span></span></div>
+    </div>
+    <script src="js/reveal.js"></script>
+    <script src="lib/highlight.js"></script>
+    <script src="lib/classList.js"></script>
+    <script>
+      // Parse the query string into a key/value object
+      var query = {};
+      location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+       query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+      } );
+      Reveal.initialize({
+       // Display controls in the bottom right corner
+       controls: !(query.controls === 'false'),
+       // Display a presentation progress bar
+       progress: true,
+       // If true; each slide will be pushed to the browser history
+       history: true,
+       // Flags if mouse wheel navigation should be enabled
+       mouseWheel: true,
+       // Apply a 3D roll to links on hover
+       rollingLinks: false,
+       // UI style
+       theme: query.theme || 'adobe', // default/neon
+       // Transition style
+       transition: query.transition || 'linear' // default/cube/page/concave/linear(2d)
+      });
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+</html>
