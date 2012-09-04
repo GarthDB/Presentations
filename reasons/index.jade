@@ -1,0 +1,380 @@
+!!! 5
+html
+	title = 'Adobe? Open Source?'
+	include ../includes/head.jade
+		link(href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic,700italic', rel='stylesheet', type='text/css')
+	body
+		#reveal
+			//- Used to fade in a background when a specific slide state is reached
+			.state-background
+			
+			//- Any section element inside of this container is displayed as a slide
+			.slides
+				section.home(data-state="home-page")
+					h1= title
+					h3.inverted
+						b Garth
+						| Braithwaite
+						span Senior Experience Designer
+				section
+					section
+						h1 Boring Junk
+
+					section
+						h1 Boring Junk
+						ul
+							li Senior Experience Designer
+							li.fragment Adobe
+							li.fragment AdobeXD
+							li.fragment Brackets
+							li.fragment Nerd Radio Host
+					
+					section
+						h1 Boring junk
+						p.large a(href="http://twitter.com/garthdb") @garthdb
+
+				section
+					h1 Overview
+					ul
+						li.fragment
+							|Background 
+							span.fragment (Origin Story)
+						li.fragment Problems
+						li.fragment Solution
+						li.fragment Rapid'd!
+
+				section
+					section
+						h1 Origin Story
+					section
+						h1 Designer
+						ul
+							li Print Agency
+							li 20 Designers, 3 Developers
+					section
+						h1 Designer / Design Implementer
+						ul
+							li Inhouse (small)
+							li Public Marketing
+							li 1 Designer / Developer
+					section
+						h1 Developer
+						ul
+							li Inhouse
+							li Public / Internal Enterprise Applications
+							li 1 Manager, 1 Designer / Developer, 1 Developer 
+					section
+						h1 Architect
+						ul
+							li Digital Agency
+							li Public Applications
+							li 6 Designers, 20 Developers
+					section
+						h1 UX Designer
+						ul
+							li Digital Agency
+							li Public Applications
+							li 6 Visual Designers, 20 Developers
+					section
+						h1 Sr Exp Designer
+						ul
+							li Product
+							li 5000 Total Employees, 110 in XD
+
+				section
+					h1 Revelation
+					h3.fragment Interaction Design is Hard
+
+				section
+					h1 IxD
+					h3.fragment Describe how users will interact with a system/product/company to achieve their goals
+
+				section
+					h1 Problems
+
+				section
+					section
+						h1 Static isn't enough
+					section
+						h1 Static designs can't describe interactions
+					section
+						h1: em So when the user clicks this
+						h3.fragment: em... it moves and goes <b>whoosh!</b> to the side, then it ...
+					section
+						h1 Good UX Moves and Adapts
+
+				section
+					section
+						h1 Rendering Inconsistencies
+					section
+						h1 Photoshop Lies
+						div
+							img(src="assets/photoshop-drop-shadow.png")
+							div(style="display: inline-block; position: relative; top:-20px; -moz-box-shadow: 5px 9px 5px 5px rgba(0, 0, 0, 0.75);-webkit-box-shadow: 5px 9px 5px 5px rgba(0, 0, 0, 0.75);-o-box-shadow: 5px 9px 5px 5px rgba(0, 0, 0, 0.75);box-shadow: 5px 9px 5px 5px rgba(0, 0, 0, 0.75); width: 160px; height: 160px; background: red;")
+					section
+						h1 Text!
+						img(src="assets/text.png")
+					section
+						h1 Platform Limitations
+						h3.fragment and strengths
+
+
+				section
+					h1 Summary
+					p Designing out of context will always be open to misinterpretation and translation errors.
+					br
+					h2.fragment Translation:
+					p.fragment Learn how to code.
+
+				section
+					h1 Solution
+				section
+					section
+						h1 HTML Prototype
+						ul
+							li.fragment 
+								|Dirty Code 
+								span.fragment (READ: not bad code)
+							li.fragment
+								|Interactive 
+								span.fragment (READ: JS)
+							li.fragment Small scope
+							li.fragment Quick
+							li.fragment Available
+							li.fragment Push Yourself
+					section
+						h1 Basic HTML Prototype
+						ul
+							li index.html
+							li main.css
+							li app.js
+							li assets
+
+				section
+					h1 Examples
+					h3: a(href="http://garthdb.github.com/Brackets-UI-Prototypes") Real project prototypes
+				
+				section
+					h1 Make it Rapid
+
+				section
+					h1 Tools
+					ul.flex-list
+						li.fragment Local Testing
+						li.fragment IDE
+						li.fragment Preprocessors (markup, css, and js)
+						li.fragment Workflow Candy
+						li.fragment Hosting
+				
+				section
+					h1 Local Testing
+					a.fragment(href="http://simbco.github.com/httpster"): img(src="assets/httpster.png", width="380", height="212")
+
+				section
+					h1 IDE
+					ul.flex-list
+						li.fragment
+							a(href="http://github.com/adobe/brackets") shhh...
+							| (not yet) $0 mac/pc/linux/...
+						li.fragment
+							a(href="http://www.sublimetext.com/2") Sublime Text 2 
+							| $59 mac/pc/linux
+						li.fragment
+							a(href="http://www.panic.com/coda/") Coda 
+							| $99 mac
+						li.fragment
+							a(href="http://macrabbit.com/espresso/") Espresso 
+							| $79 mac
+
+				section
+					section
+						h1 Preprocessors
+					section
+						h1: a(href="http://jade-lang.com/") Jade
+						pre: code
+							|body
+							|    h1 Jade - node template engine
+							|    #container
+							|        if youAreUsingJade
+							|            p You are amazing
+							|        else
+							|            p Get on it!
+							| 
+						pre: code
+							|&lt;body&gt;
+							|    &lt;h1&gt; Jade - node template engine&lt;/h1&gt;
+							|    &lt;div id="container"&gt;
+							|        &lt;p&gt;You are amazing&lt;/p&gt;
+							|    &lt;/div&gt;
+							|&lt;/body&gt;
+							| 
+					section
+						h1: a(href="http://haml.info/") HAML
+						pre: code
+							|%body
+							|    %h1 HAML - {markup haiku}
+							|    #container
+							|        - if youAreUsingHAML
+							|            %p You are amazing
+							|        - else
+							|            %p Get on it!
+							| 
+						pre: code
+							|&lt;body&gt;
+							|    &lt;h1&gt; HAML - {markup haiku}&lt;/h1&gt;
+							|    &lt;div id="container"&gt;
+							|        &lt;p&gt;You are amazing&lt;/p&gt;
+							|    &lt;/div&gt;
+							|&lt;/body&gt;
+							| 
+					section
+						h1: a(href="http://daringfireball.net/projects/markdown/") Markdown
+						pre: code
+							|# This is an H1
+							|* Red
+							|* Green
+							|* Blue
+							| 
+							|[an example](http://example.com/ "Title") inline link.
+							| 
+						pre: code
+							|&lt;h1&gt;This is an H1&lt;/h1&gt;
+							|&lt;ul&gt;
+							|    &lt;li&gt;Red&lt;/li&gt;
+							|    &lt;li&gt;Green&lt;/li&gt;
+							|    &lt;li&gt;Blue&lt;/li&gt;
+							|&lt;/ul&gt;
+							|&lt;p&gt;&lt;a href="http://example.com/" title="Title"&gt;an example&lt;/a&gt; inline link.&lt;/p&gt;
+							| 
+
+					section
+						h1: a(href="http://learnboost.github.com/stylus/") Stylus
+						pre: code
+							|border-radius()
+							|    -webkit-border-radius arguments
+							|    -moz-border-radius arguments
+							|    border-radius arguments
+							| 
+							|body
+							|    font 12px Helvetica, Arial, sans-serif
+							| 
+							|    a.button
+							|        border-radius(5px)
+						pre: code
+							|body {
+							|    font: 12px Helvetica, Arial, sans-serif;
+							|}
+							|body a.button {
+							|    -webkit-border-radius: 5px;
+							|    -moz-border-radius: 5px;
+							|    border-radius: 5px;
+							|}
+							| 
+						p Try <a href="http://visionmedia.github.com/nib/">Nib</a>
+					section
+						h1: a(href="http://sass-lang.com/") SASS
+						pre: code
+							|@mixin border-radius($radius) {
+							|    -webkit-border-radius: $radius;
+							|    -moz-border-radius: $radius;
+							|    border-radius: $radius;
+							|}
+							|body {
+							|    font: 12px Helvetica, Arial, sans-serif;
+							| 
+							|    a.button {
+							|        @include border-radius(5px);
+							|    }
+							|}
+						pre: code
+							|body {
+							|    font: 12px Helvetica, Arial, sans-serif;
+							|}
+							|body a.button {
+							|    -webkit-border-radius: 5px;
+							|    -moz-border-radius: 5px;
+							|    border-radius: 5px;
+							|}
+							| 
+						p Try <a href="http://compass-style.org/">Compass</a>
+					section
+						h1: a(href="http://lesscss.org/") Less
+						pre: code
+							|.border-radius (@radius: 5px) {
+							|    -webkit-border-radius: @radius;
+							|    -moz-border-radius: @radius;
+							|    border-radius: @radius;
+							|}
+							|body {
+							|    font: 12px Helvetica, Arial, sans-serif;
+							| 
+							|    a.button {
+							|        .border-radius(5px);
+							|    }
+							|}
+						pre: code
+							|body {
+							|    font: 12px Helvetica, Arial, sans-serif;
+							|}
+							|body a.button {
+							|    -webkit-border-radius: 5px;
+							|    -moz-border-radius: 5px;
+							|    border-radius: 5px;
+							|}
+							| 
+						p Try <a href="http://compass-style.org/">Compass</a>
+					section
+						h1: a(href="http://coffeescript.org/") Coffeescript
+						pre: code
+							|$ ->
+							|    console.log 'This be ready yo'
+							| 
+						pre: code
+							|$(function() {
+							|    return console.log('This be ready yo');
+							|});
+							| 
+						p Checkout <a href="http://js2coffee.org/">Js2Coffee</a> and <a href="http://arcturo.github.com/library/coffeescript/">The Little Book on Coffeescript</a>
+
+				section
+					section
+						h1 Workflow Candy
+					section
+						h1: a(href="http://incident57.com/codekit/") CodeKit
+						img(src="assets/codekit.png")
+					section
+						h1: a(href="http://codecanyon.net/item/nettuts-structurer-pro/300801") Structurer Pro
+						img(src="assets/structurer.png")
+					section
+						h1: a(href="https://github.com/garthdb/starter") Start a starter
+					section
+						h1: a(href="http://labs.adobe.com/technologies/shadow/") Adobe Shadow
+						img(src="assets/adobe_shadow.jpg")
+					section
+						h1: a(href="http://totalterminal.binaryage.com/") Total Terminal
+						img(src="assets/total_terminal.png")
+
+				section
+					h1 Hosting and Versioning
+					a(href="http://pages.github.com/") Github Pages
+
+				section
+					h1 Conclusion
+
+				section
+					img(src="assets/adobe-vector.svg", width="357", height="600", style="margin-top:-150px")						
+
+				section.adobe-list
+					h3 Colophon
+					ul
+						li
+							b reveal.js 
+							| by 
+							a(href="http://hakim.se") Hakim El Hattab
+						li
+							b Font 
+							a(href="http://www.google.com/webfonts/specimen/Lato") Lato
+			
+			include ../includes/controls.jade
+		
+		include ../includes/close.jade
