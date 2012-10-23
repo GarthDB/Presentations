@@ -1,0 +1,54 @@
+!!! 5
+html
+	title = 'Adobe Bootstrap'
+	include ../includes/head.jade
+		link(href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic,700italic', rel='stylesheet', type='text/css')
+	body
+		#reveal
+			//- Used to fade in a background when a specific slide state is reached
+			.state-background
+			
+			//- Any section element inside of this container is displayed as a slide
+			.slides
+				section.home(data-state="home-page")
+					h1= title
+				
+				section
+					h1 Teams
+					ul
+						li Brackets
+						li Reflow
+						li Gadget
+						li Pipeline
+
+				section
+					section
+						h1 Goals
+						ul
+							li Unified approach to HTML based application development
+							li Create a starting point for new applications
+							li Community involvement
+							li Twitter Bootstrap Contributions
+					section
+						h1 Team Specific Needs
+				section
+					h1 Areas of Focus
+					ul
+						li Components
+						li
+							|Layout 
+							span.fragment (Kristofers Grid)
+						li Northstar Design
+				section
+					h1 Obstacles
+					ul
+						li Cross-team work
+						li Resources/Time
+				section
+					h1 Conclusions
+					ul
+						li Add potentially reusable components to a central repo (even if prototypy)
+						li Put a wiki page (list) with needed components
+			include ../includes/controls.jade
+		
+		include ../includes/close.jade

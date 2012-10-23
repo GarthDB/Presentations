@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Adobe Bootstrap</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="lib/zenburn.css">
+  </head>
+  <body>
+    <div id="reveal">
+      <div class="state-background"></div>
+      <div class="slides">
+        <section data-state="home-page" class="home">
+          <h1>Adobe Bootstrap</h1>
+        </section>
+        <section>
+          <h1>Teams</h1>
+          <ul>
+            <li>Brackets</li>
+            <li>Reflow</li>
+            <li>Gadget</li>
+            <li>Pipeline</li>
+          </ul>
+        </section>
+        <section>
+          <section>
+            <h1>Goals</h1>
+            <ul>
+              <li>Unified approach to HTML based application development</li>
+              <li>Create a starting point for new applications</li>
+              <li>Community involvement</li>
+              <li>Twitter Bootstrap Contributions</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Team Specific Needs</h1>
+          </section>
+        </section>
+        <section>
+          <h1>Areas of Focus</h1>
+          <ul>
+            <li>Components</li>
+            <li>Layout <span class="fragment">(Kristofers Grid)</span></li>
+            <li>Northstar Design</li>
+          </ul>
+        </section>
+        <section>
+          <h1>Obstacles</h1>
+          <ul>
+            <li>Cross-team work</li>
+            <li>Resources/Time</li>
+          </ul>
+        </section>
+        <section>
+          <h1>Conclusions</h1>
+          <ul>
+            <li>Add potentially reusable components to a central repo (even if prototypy)</li>
+            <li>Put a wiki page (list) with needed components</li>
+          </ul>
+        </section>
+      </div>
+      <aside class="controls"><a href="#" style="-webkit-transform:rotate(180deg);" class="left">&#x2794;</a><a href="#" class="right">&#x2794;</a><a href="#" class="up"></a><a href="#" class="down"></a></aside>
+      <div class="progress"><span></span></div>
+    </div>
+    <script src="js/reveal.js"></script>
+    <script src="lib/highlight.js"></script>
+    <script src="lib/classList.js"></script>
+    <script>
+      // Parse the query string into a key/value object
+      var query = {};
+      location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+       query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+      } );
+      Reveal.initialize({
+       // Display controls in the bottom right corner
+       controls: !(query.controls === 'false'),
+       // Display a presentation progress bar
+       progress: true,
+       // If true; each slide will be pushed to the browser history
+       history: true,
+       // Flags if mouse wheel navigation should be enabled
+       mouseWheel: true,
+       // Apply a 3D roll to links on hover
+       rollingLinks: false,
+       // UI style
+       theme: query.theme || 'adobe', // default/neon
+       // Transition style
+       transition: query.transition || 'linear' // default/cube/page/concave/linear(2d)
+      });
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+</html>
